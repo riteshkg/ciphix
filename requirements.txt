@@ -1,0 +1,10 @@
+Flask==2.1.2
+gunicorn==20.1.0
+requests==2.28.1
+emoji==1.7.0
+contractions==0.1.72
+nltk==3.7
+inflect==5.6.0
+gensim==4.2.0
+pyLDAvis==3.3.1
+IPython==8.4.0

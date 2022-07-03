@@ -1,0 +1,12 @@
+Model 2 (LSI): Top 10 topics
+(0, '0.353*"service" + 0.341*"phone" + 0.331*"address" + 0.272*"email" + 0.195*"issue" + 0.165*"customer" + 0.162*"order" + 0.147*"name" + 0.142*"full" + 0.140*"want"')
+(1, '-0.507*"address" + -0.494*"email" + 0.493*"service" + 0.248*"customer" + -0.165*"name" + -0.153*"full" + 0.120*"issue" + -0.110*"take" + 0.101*"flight" + 0.059*"update"')
+(2, '-0.614*"service" + 0.382*"issue" + 0.245*"update" + -0.241*"customer" + -0.218*"address" + 0.176*"phone" + -0.163*"email" + 0.157*"work" + 0.142*"ios" + 0.138*"want"')
+(3, '-0.752*"phone" + 0.321*"order" + 0.300*"flight" + 0.203*"email" + 0.116*"delivery" + 0.112*"check" + 0.088*"could" + -0.081*"service" + 0.075*"store" + 0.072*"today"')
+(4, '-0.655*"issue" + 0.383*"phone" + 0.284*"order" + 0.277*"flight" + -0.184*"service" + -0.156*"update" + 0.129*"delivery" + -0.126*"email" + -0.122*"address" + -0.108*"work"')
+(5, '0.700*"flight" + -0.611*"order" + -0.183*"delivery" + -0.095*"amazon" + 0.065*"check" + 0.065*"address" + 0.062*"great" + 0.061*"change" + 0.053*"email" + 0.051*"delayed"')
+(6, '-0.463*"want" + 0.396*"order" + 0.366*"flight" + 0.366*"issue" + -0.221*"app" + -0.182*"iphone" + 0.172*"phone" + -0.171*"store" + -0.156*"ios" + -0.123*"version"')
+(7, '-0.699*"want" + 0.385*"check" + 0.254*"app" + 0.193*"update" + -0.165*"issue" + 0.138*"could" + 0.135*"store" + -0.121*"assist" + 0.118*"email" + -0.117*"experience"')
+(8, '-0.598*"check" + 0.353*"could" + 0.299*"assist" + 0.267*"store" + -0.260*"want" + -0.161*"order" + -0.160*"update" + 0.156*"take" + 0.126*"message" + -0.123*"email"')
+(9, '0.566*"check" + 0.482*"assist" + -0.277*"update" + -0.239*"work" + -0.217*"email" + -0.135*"iphone" + 0.110*"message" + -0.101*"ios" + -0.091*"fixed" + -0.090*"take"')
+Model 2 (LSI): Finished

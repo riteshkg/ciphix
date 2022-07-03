@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+
+	<!-- Meta -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<meta name="author" content="Ritesh Ganpat" />
+
+	<!-- Title -->
+	<title>Ciphix Case</title>
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic" rel="stylesheet">
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="static/css/basic.css" />
+	<link rel="stylesheet" href="static/css/layout.css" />
+	<link rel="stylesheet" href="static/css/magnific-popup.css" />
+	<link rel="stylesheet" href="static/css/animate.css" />
+	<link rel="stylesheet" href="static/css/jarallax.css" />
+	<link rel="stylesheet" href="static/css/swiper.css" />
+	<link rel="stylesheet" href="static/css/fontawesome.css" />
+	<link rel="stylesheet" href="static/css/brands.css" />
+	<link rel="stylesheet" href="static/css/solid.css" />
+		
+	<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<link rel="shortcut icon" href="static/images/favicons/favicon.png">
+
+</head>
+
+<body class="home">
+
+	<!-- Preloader -->
+	<div class="preloader">
+		<div class="centrize full-width">
+			<div class="vertical-center">
+				<div class="spinner">
+					<div class="double-bounce1"></div>
+					<div class="double-bounce2"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Container -->
+	<div class="container">
+
+		<!-- Cursor -->
+		<div class="cursor-follower"></div>
+	
+		<!-- Header -->
+		<header class="header">
+			<div class="head-top">
+
+				<!-- logo -->
+				<div class="logo hover-masks-logo">
+					<a href="#">
+						<span class="mask-lnk">Ritesh <strong>Ganpat</strong></span>
+					</a>
+				</div>
+			</div>
+		</header>
+		
+		<!-- Wrapper -->
+		<div class="wrapper">	
+
+        <!-- Section Service -->
+			<div class="section service" id="section-services">
+				<div class="content">
+
+					<!-- title -->
+					<div class="title">
+						<div class="title_inner">Predictions</div>
+					</div>
+
+					<!-- service items -->
+					<div class="service-items">
+                         {% for topic, probability, topic_name in results %}
+                             <div class="service-col">
+                                 <div class="service-item content-box">
+                                     <div class="icon"><span class="fas fa-code"></span></div>
+                                     <div class="name">Topic {{ topic }}: {{ topic_name }}</div>
+                                     <div class="text">Probability: {{ probability }}</div>
+                                 </div>
+                             </div>
+                         {% endfor %}
+
+					</div>
+
+					<div class="clear"></div>
+				</div>
+			</div>
+
+        			<!-- Section Started -->
+			<div class="section started personal" id="section-started">
+
+				<!-- background -->
+				<div class="video-bg">
+					<div class="video-bg-mask"></div>
+					<div class="video-bg-texture" id="grained_container"></div>
+				</div>
+
+				<!-- started content -->
+				<div class="centrize full-width">
+					<div class="vertical-center">
+						<div class="started-content">
+							<div class="h-subtitles">
+								 <div class="bts">
+									<a href="/predict" class="btn hover-animated">
+										<span class="circle"></span>
+										<span class="lnk">Go Back</span>
+									</a>
+                                </div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="copy">
+				<p>E: riteshkganpat@gmail.com</p>
+				<p>T: +31 (6) 1173 88 30</p>
+			</div>
+			<div class="clear"></div>
+		</footer>
+
+		<!-- Lines -->
+		<div class="lines">
+			<div class="line-col"></div>
+			<div class="line-col"></div>
+			<div class="line-col"></div>
+			<div class="line-col"></div>
+			<div class="line-col"></div>
+		</div>
+		
+	</div>
+
+	<!-- Scripts -->
+	<script src="static/js/jquery.min.js"></script>
+	<script src="static/js/jquery.validate.js"></script>
+	<script src="static/js/magnific-popup.js"></script>
+	<script src="static/js/simpleParallax.js"></script>
+	<script src="static/js/typed.js"></script>
+	<script src="static/js/jarallax.js"></script>
+	<script src="static/js/jarallax-video.js"></script>
+	<script src="static/js/jarallax-element.js"></script>
+	<script src="static/js/imagesloaded.pkgd.js"></script>
+	<script src="static/js/isotope.pkgd.js"></script>
+	<script src="static/js/swiper.js"></script>
+	<script src="static/js/grained.js"></script>
+	<script src="static/js/scripts.js"></script>
+
+</body>
+</html>
