@@ -14,10 +14,20 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from gensim import corpora
 import static
+import requests
+
 
 # Older libraries (gensim) needs explicit download
 nltk.download('punkt')
 nltk.download('stopwords')
+
+
+# Download the original data file and store
+def download_data():
+    data = requests.get("https://ciphix.io/ai/data.csv")
+    data_file = open("data/data.csv", "wb")
+    data_file.write(data.content)
+    data_file.close()
 
 
 # Predict a new document based on a saved model.
@@ -221,6 +231,7 @@ def analyze(data):
 
 # Run this script locally to obtain the model and save cloud resources and thus money.
 if __name__ == '__main__':
+    download_data()
     preprocess_step_1(True, "data/data.csv", "data/tmp_data.csv")
     preprocess_step_2("data/tmp_data.csv", "data/final_data.csv")
     analyze(tokenize('data/final_data.csv'))
