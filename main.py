@@ -38,7 +38,7 @@ def predict_input():
     topic, probability = zip(*prediction)
     topic_name = ["Customer orders", "Personal information", "Train ticket", "Package delivery", "Payment",
                   "Information about issues", "Amazon", "Contacting support", "Flight feedback", "(Good) Internet"]
-    return render_template('prediction.html', results=zip(topic, probability, topic_name))
+    return render_template('prediction.html', topic_name=topic_name, results=zip(topic, probability))
 
 
 # Generic route if no custom operation is required

@@ -80,11 +80,11 @@
 
 					<!-- service items -->
 					<div class="service-items">
-                         {% for topic, probability, topic_name in results %}
+                         {% for topic, probability in results %}
                              <div class="service-col">
                                  <div class="service-item content-box">
                                      <div class="icon"><span class="fas fa-code"></span></div>
-                                     <div class="name">Topic {{ topic }}: {{ topic_name }}</div>
+                                     <div class="name">Topic {{ topic }}: {{ topic_name[topic] }}</div>
                                      <div class="text">Probability: {{ probability }}</div>
                                  </div>
                              </div>
